@@ -1,13 +1,15 @@
 import React from "react";
-import Navbar from "./Components/Navbar/navbar";
-
+import { HeaderSearch } from "./Components/Header/HeaderSearch";
+import Contact from "./Components/Content/Content";
+import { MantineProvider } from '@mantine/core';
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <MantineProvider>
+      <HeaderSearch />
+      <Contact/>
+    </MantineProvider>
 
-    </>
   );
 }
 
