@@ -1,9 +1,5 @@
 import React from 'react';
-
-const cards = [
-  'Image 1', 'Image 2', 'Image 3', 'Image 4', 'Image 5', 'Image 6', 'Image 7', 'Image 8',
-  'Image 9', 'Image 10', 'Image 11', 'Image 12', 'Image 13', 'Image 14', 'Image 15', 'Image 16'
-];
+import { cards } from '../Data/Data';  // Mengimpor data dari data.tsx
 
 const Contact: React.FC = () => {
   return (
@@ -19,12 +15,12 @@ const Contact: React.FC = () => {
             className="relative w-full h-24 rounded-lg overflow-hidden shadow-lg transform"
           >
             <img
-              src={`https://via.placeholder.com/150?text=${card}`}
-              alt={card}
+              src={`/${card.image}`}  // Path gambar di dalam public
+              alt={card.name}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black opacity-25"></div>
-            <p className="absolute bottom-0 left-0 p-2 text-white font-bold">{card}</p>
+            <div className="absolute inset-0 bg-white opacity-10"></div>
+            <p className="absolute bottom-0 left-0 p-2 text-black font-bold">{card.name}</p>
           </div>
         ))}
       </div>
