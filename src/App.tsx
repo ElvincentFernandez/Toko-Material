@@ -1,8 +1,9 @@
 import React from "react";
 import { HeaderSearch } from "./Components/Header/HeaderSearch";
-import Contact from "./Components/Content/Content";
-import { MantineProvider } from '@mantine/core';
 import { Hero } from "./Components/Hero/Hero";
+import Content from "./Components/Content/Content";
+import Partner from "./Components/Client/Partner";
+import { MantineProvider } from '@mantine/core';
 import Delivery from "./Components/Delivery/Delivery";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <MantineProvider>
       <HeaderSearch />
       <Hero/>
-      <Contact/>
+      <Content/>
       <Delivery/>
+      <Partner/>
     </MantineProvider>
 
   );
