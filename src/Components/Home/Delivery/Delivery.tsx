@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "@mantine/core"; // Import Button dari Mantine
-import { data } from "../Data/Data"; // Import data utama
+import { Button } from "@mantine/core"; 
+import { data } from "../../Data/Data"; 
 
-const { send } = data; // Ambil data 'send'
+const { send } = data; 
 
 const Delivery: React.FC = () => {
   return (

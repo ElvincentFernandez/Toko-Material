@@ -1,36 +1,35 @@
-import { IconSearch } from '@tabler/icons-react';
-import { Autocomplete, Burger, Group } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import React from 'react';
+import { IconSearch } from "@tabler/icons-react";
+import { Autocomplete, Burger, Group } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import { Link } from "react-router-dom"; // Import Link dari react-router-dom
+import React from "react";
 
 const links = [
-  { link: '/about', label: 'Features' },
-  { link: '/pricing', label: 'Pricing' },
-  { link: '/learn', label: 'Learn' },
-  { link: '/community', label: 'Community' },
+  { link: "/kategori", label: "Kategori" },
+  { link: "/pricing", label: "Pricing" },
+  { link: "/learn", label: "Learn" },
+  { link: "/community", label: "Keranjang" },
 ];
+
 
 export function HeaderSearch() {
   const [opened, { toggle }] = useDisclosure(false);
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link} // Gunakan 'to' agar bisa navigasi dengan react-router
       className="text-white hover:text-gray-300 px-4 py-2"
-      onClick={(event) => event.preventDefault()}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (
     <header className="bg-blue-900 text-white">
       <div className="flex justify-between items-center p-4">
         {/* Toko Mandiri Steel */}
-        <div className="text-lg font-semibold">
-          Mandiri Steel
-        </div>
+        <div className="text-lg font-semibold">Mandiri Steel</div>
 
         {/* Burger Menu for mobile */}
         <Group className="lg:hidden">
@@ -39,9 +38,7 @@ export function HeaderSearch() {
 
         {/* Links and Search */}
         <Group className="hidden lg:flex items-center space-x-6">
-          <div className="flex space-x-4">
-            {items}
-          </div>
+          <div className="flex space-x-4">{items}</div>
           <Autocomplete
             className="w-full sm:w-auto"
             placeholder="Search"

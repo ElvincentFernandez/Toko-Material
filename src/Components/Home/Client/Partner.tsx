@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../Data/Data"; // Import data utama
+import { data } from "../../Data/Data"; // Import data utama
 
 const { partner } = data; // Ambil data 'partner'
 
