@@ -12,7 +12,7 @@ const Kategori: React.FC = () => {
 
   // Filter kategori berdasarkan input pencarian
   const filteredCards = cards.filter((card) =>
-    card.name.toLowerCase().includes(search.toLowerCase())
+    card.name.toLowerCase().startsWith(search.toLowerCase())
   );
 
   // Fetch produk dari PHP API saat kategori diklik

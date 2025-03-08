@@ -20,7 +20,7 @@ export function Hero() {
         </Text>
       </Container>
 
-      <Button className="ml-3 pb-3 bg-blue-900 text-white border-2 border-blue-900 w-50 py-3 px-4 text-sm rounded-full">
+      <Button className="ml-3 pb-3 bg-blue-900 text-white border-2 border-blue-900 cursor-pointer w-50 py-3 px-4 text-sm rounded-full">
           Mulai Belanja
       </Button>
     </div>

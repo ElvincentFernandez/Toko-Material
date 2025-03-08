@@ -1,7 +1,5 @@
-import { IconSearch } from "@tabler/icons-react";
-import { Autocomplete, Burger, Group } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { Link } from "react-router-dom"; // Import Link dari react-router-dom
+import { Group, Button } from "@mantine/core";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const links = [
@@ -11,15 +9,12 @@ const links = [
   { link: "/community", label: "Keranjang" },
 ];
 
-
 export function HeaderSearch() {
-  const [opened, { toggle }] = useDisclosure(false);
-
   const items = links.map((link) => (
     <Link
+      className="text-white hover:text-gray-300 px-2 py-2"
       key={link.label}
-      to={link.link} // Gunakan 'to' agar bisa navigasi dengan react-router
-      className="text-white hover:text-gray-300 px-4 py-2"
+      to={link.link}
     >
       {link.label}
     </Link>
@@ -28,35 +23,25 @@ export function HeaderSearch() {
   return (
     <header className="bg-blue-900 text-white">
       <div className="flex justify-between items-center p-4">
-        {/* Toko Mandiri Steel */}
-        <div className="text-lg font-semibold">Mandiri Steel</div>
+        {/* Logo */}
+        <div className="text-2xl font-semibold">Mandiri Steel</div>
 
-        {/* Burger Menu for mobile */}
-        <Group className="lg:hidden">
-          <Burger opened={opened} onClick={toggle} size="sm" />
-        </Group>
+        {/* Link Navigasi lebih rapat & geser ke kiri */}
+        <div className="flex space-x2 translate-x-40">{items}</div>
 
-        {/* Links and Search */}
-        <Group className="hidden lg:flex items-center space-x-6">
-          <div className="flex space-x-4">{items}</div>
-          <Autocomplete
-            className="w-full sm:w-auto"
-            placeholder="Search"
-            visibleFrom="xs"
-          />
-        </Group>
+        {/* Tombol Daftar/Login lebih terpisah */}
+        <Group className="flex items-center space-x-3">
+          <Link to = "/Login">
+        <Button className="bg-gradient-to-tr from-blue-900 to-emerald-500 text-white border-2 border-blue-900 font-semibold py-2 px-6 text-sm rounded-full transition-all duration-300 ease-in-out hover:from-blue-700 hover:to-emerald-400 hover:shadow-lg">
+          Login
+        </Button>
+          </Link>
 
-        {/* Mobile Menu */}
-        {opened && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-blue-900 p-4 space-y-4">
-            {items}
-            <Autocomplete
-              className="w-full"
-              placeholder="Search"
-              leftSection={<IconSearch size={16} stroke={1.5} />}
-            />
-          </div>
-        )}
+        <Button className="bg-gradient-to-r from-purple-900 to-pink-500 text-white border-2 border-purple-900 font-semibold py-2 px-6 text-sm rounded-full transition-all duration-300 ease-in-out hover:from-purple-700 hover:to-pink-400 hover:shadow-lg">
+          Sign Up
+        </Button>
+      </Group>
+
       </div>
     </header>
   );

@@ -1,13 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HeaderSearch } from "./Components/Home/Header/HeaderSearch";
-import { Hero } from "./Components/Home/Hero/Hero";
-import Content from "./Components/Home/Content/Content";
-import Partner from "./Components/Home/Client/Partner";
 import { MantineProvider } from "@mantine/core";
-import Delivery from "./Components/Home/Delivery/Delivery";
-import Kategori from "./Components/Home/Navbar/Category/Kategori";
 import { Outlet } from "react-router-dom"; // Import Outlet untuk layout
+import { Hero } from "./Components/Home/Hero/Hero";
+import { Content, Partner, Delivery, Kategori } from "./Components/Home";
+import LoginCard from "./Auth/Login";
 
 // Layout utama dengan Header
 const Layout = () => (
@@ -27,6 +25,7 @@ function App() {
             <Route path="/" element={<> <Hero /> <Content /> <Delivery /> <Partner /> </>} />
             <Route path="/kategori" element={<Kategori />} />
           </Route>
+          <Route path="/Login" element={<LoginCard/>} />
         </Routes>
       </Router>
     </MantineProvider>
