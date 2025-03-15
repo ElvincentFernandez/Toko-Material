@@ -1,4 +1,3 @@
-import React from "react";
 import { data } from "../../Data/Data"; // Import data utama
 
 const { cards } = data; // Ambil data 'cards'

@@ -1,5 +1,4 @@
 import { Button, Container, Overlay, Text, Title } from '@mantine/core';
-import React from 'react';
 
 export function Hero() {
   return (

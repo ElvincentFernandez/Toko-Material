@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaFacebookF, FaApple, FaEye, FaEyeSlash } from "react-icons/fa";
 
 const LoginCard = () => {

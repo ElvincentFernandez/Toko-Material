@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@mantine/core"; 
 import { data } from "../../Data/Data"; 
 
@@ -22,7 +21,7 @@ const Delivery: React.FC = () => {
                 <img
                   src={`/${item.image}`} // Path gambar
                   alt={item.name}
-                  className="w-full h-[320px] object-cover"
+                  className="w-full h-[350px] object-cover"
                 />
                 {/* Button transparan di pojok kiri bawah */}
                 <Button className="absolute bottom-2 left-2 bg-transparent text-white font-bold border border-white text-xs py-1 px-3 rounded-full">

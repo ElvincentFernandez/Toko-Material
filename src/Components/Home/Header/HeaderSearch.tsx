@@ -1,6 +1,5 @@
 import { Group, Button } from "@mantine/core";
 import { Link } from "react-router-dom";
-import React from "react";
 
 const links = [
   { link: "/kategori", label: "Kategori" },
@@ -37,11 +36,13 @@ export function HeaderSearch() {
         </Button>
           </Link>
 
+        <Link to = "/Register">
         <Button className=" whitespace-nowrap bg-gradient-to-r from-purple-900 to-pink-500 text-white border-2 border-purple-900 font-semibold py-2 px-6 text-sm rounded-full transition-all duration-300 ease-in-out hover:from-purple-700 hover:to-pink-400 hover:shadow-lg cursor-pointer">
           Sign Up
         </Button>
+        </Link>
       </Group>
-
+        
       </div>
     </header>
   );
