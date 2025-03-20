@@ -5,7 +5,7 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="relative min-h-screen flex items-center justify-center">
       {/* Background Image Fullscreen */}
       <div
         className="absolute inset-0 bg-cover bg-center"

@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom"; // Import Outlet untuk layout
 import { Hero } from "./Components/Home/Hero/Hero";
 import { Content, Partner, Delivery, Kategori } from "./Components/Home";
 import { LoginCard, Signup } from "./Auth";
+import Footer from "./Components/Home/Footer/Footer";
 
 // Layout utama dengan Header
 const Layout = () => (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<LoginCard />} />
           <Route path="/register" element={<Signup />} />
         </Routes>
+        <Footer/>
       </Router>
     </MantineProvider>
   );
