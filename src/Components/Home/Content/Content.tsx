@@ -1,4 +1,5 @@
 import { data } from "../../Data/Data"; // Import data utama
+import { Button } from "@mantine/core";
 
 const { cards } = data; // Ambil data 'cards'
 
@@ -23,9 +24,9 @@ const Content: React.FC = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-white opacity-10"></div>
-            <p className="absolute bottom-0 left-0 p-2 text-black font-bold">
-              {card.name}
-            </p>
+                <Button className="absolute bottom-2 left-2 bg-transparent text-black font-bold border border-black  text-xs py-1 px-3 rounded-full">
+                  {card.name}
+                </Button>
           </div>
         ))}
       </div>
