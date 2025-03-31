@@ -7,7 +7,7 @@ const links = [
   { link: "/kategori", label: "Kategori" },
   { link: "/pricing", label: "Pricing" },
   { link: "/learn", label: "Learn" },
-  { link: "/community", label: "Keranjang" },
+  { link: "/keranjang", label: "Keranjang" },
 ];
 
 export function HeaderSearch() {

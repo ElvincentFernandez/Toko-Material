@@ -37,7 +37,6 @@ function Footer() {
             <h3 className="font-medium text-lg mb-4">Developers</h3>
             <ul className="space-y-3">
               <li><Link to="#" className="text-gray-400 hover:text-white transition">Changelog</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition">Documentation</Link></li>
             </ul>
           </div>
 
