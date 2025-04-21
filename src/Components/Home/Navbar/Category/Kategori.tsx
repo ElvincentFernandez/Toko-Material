@@ -20,7 +20,7 @@ const Kategori: React.FC = () => {
     setSelectedCategory(category);
     setLoading(true);
 
-    fetch(`http://localhost/get/getitems.php?category=${category}`)
+    fetch(`http://localhost/get/get/getitems.php?category=${category}`)
       .then((res) => res.json())
       .then((data) => {
         setItems(data);

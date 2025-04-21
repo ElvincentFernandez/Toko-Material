@@ -14,7 +14,7 @@ const Signup = () => {
 
       {/* Overlay agar konten tetap terlihat */}
       <div className="relative bg-white p-8 rounded-2xl shadow-lg w-96 z-10">
-        <h2 className="text-2xl font-bold text-center mb-2">Log in</h2>
+        <h2 className="text-2xl font-bold text-center mb-2">Sign Up</h2>
 
         <form>
           <div className="mb-4">

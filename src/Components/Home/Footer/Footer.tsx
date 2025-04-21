@@ -1,7 +1,7 @@
 import { Linkedin, Twitter, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-900 text-white py-12 px-4 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
