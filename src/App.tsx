@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HeaderSearch } from "./Components/Home/Header/HeaderSearch";
+import { HeaderSearch } from "./component/Home/Header/HeaderSearch";
 import { MantineProvider } from "@mantine/core";
-import { Hero } from "./Components/Home/Hero/Hero";
-import { Content, Partner, Delivery, Kategori, Footer } from "./Components/Home";
-import { AuthRoutes } from "./Auth/AuthRoutes";
+import { Hero } from "./component/Home/Hero/Hero";
+import { Content, Partner, Delivery, Kategori, Footer } from "./component/Home";
+import { AuthRoutes } from "./auth/AuthRoutes";
 
 function App() {
   return (

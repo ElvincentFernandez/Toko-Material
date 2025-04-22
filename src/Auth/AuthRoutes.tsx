@@ -1,5 +1,5 @@
 import { Route } from "react-router-dom";
-import { LoginCard, Signup } from "../Auth";
+import { LoginCard, Signup } from ".";
 
 export const AuthRoutes = [
   <Route key="login" path="/login" element={<LoginCard />} />,

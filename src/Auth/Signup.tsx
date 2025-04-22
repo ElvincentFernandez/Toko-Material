@@ -36,7 +36,7 @@ const Signup = () => {
           </div>
 
           <div className="mb-4 relative">
-            <label className="block text-gray-700">Password</label>
+            <label className="block text-gray-700">Create Password</label>
             <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
@@ -48,7 +48,25 @@ const Signup = () => {
                 className="absolute right-3 top-4 text-gray-500 text-lg cursor-pointer"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                {showPassword ? <FaEye /> : <FaEyeSlash />}
+              </button>
+            </div>
+          </div>
+
+          <div className="mb-4 relative">
+            <label className="block text-gray-700">Confirm Password</label>
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                className="w-full p-2 border border-gray-300 rounded mt-1 pr-10"
+                required
+              />
+              <button
+                type="button"
+                className="absolute right-3 top-4 text-gray-500 text-lg cursor-pointer"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <FaEye /> : <FaEyeSlash />}
               </button>
             </div>
           </div>
@@ -62,7 +80,7 @@ const Signup = () => {
             className="w-full bg-blue-900 text-white p-2 rounded-full font-semibold cursor-pointer"
             disabled
           >
-            Log in
+            Sign Up
           </button>
         </form>
 
