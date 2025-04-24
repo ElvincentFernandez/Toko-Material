@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi"; // Import ikon hamburger
 
 const links = [
-  { link: "/kategori", label: "Kategori" },
+  { link: "/", label: "Home" },
+  { link: "/kategori", label: "Category" },
   { link: "/pricing", label: "Pricing" },
   { link: "/learn", label: "Learn" },
-  { link: "/keranjang", label: "Keranjang" },
+  { link: "/keranjang", label: "Wishlist" },
 ];
 
 export function HeaderSearch() {
@@ -39,7 +40,7 @@ export function HeaderSearch() {
               Login
             </Button>
           </Link>
-          <Link to="/Register">
+          <Link to="/signup">
             <Button className="whitespace-nowrap bg-gradient-to-r from-purple-900 to-pink-500 text-white border-2 border-purple-900 font-semibold px-6 py-2 text-sm rounded-full hover:from-purple-700 hover:to-pink-400">
               Sign Up
             </Button>
@@ -73,7 +74,7 @@ export function HeaderSearch() {
               Login
             </Button>
           </Link>
-          <Link to="/Register">
+          <Link to="/signup">
             <Button className="w-full mt-2 bg-gradient-to-r from-purple-900 to-pink-500 text-white border-2 border-purple-900 font-semibold px-6 py-2 text-sm rounded-full hover:from-purple-700 hover:to-pink-400">
               Sign Up
             </Button>

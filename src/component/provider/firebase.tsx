@@ -14,13 +14,14 @@ interface FirebaseConfig {
 }
 
 // Firebase configuration object (ambil ini dari Firebase Console)
-const firebaseConfig: FirebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+const firebaseConfig = {
+  apiKey: "AIzaSyB-MsqPHYGJRiKTwMDf00HS1GMIr7qeHeI",
+  authDomain: "percobaan-7f0c5.firebaseapp.com",
+  projectId: "percobaan-7f0c5",
+  storageBucket: "percobaan-7f0c5.firebasestorage.app",
+  messagingSenderId: "161763273154",
+  appId: "1:161763273154:web:b01d71ca547fc13957ce5b",
+  measurementId: "G-PR8QELP3WN"
 };
 
 // Inisialisasi Firebase

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaFacebookF, FaApple, FaEye, FaEyeSlash } from "react-icons/fa";
+import { signInWithRedirect } from "firebase/auth";
+import { auth, googleProvider } from "../component/provider/firebase"; // sesuaikan path jika perlu
 
 const LoginCard = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,7 +20,7 @@ const LoginCard = () => {
 
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700">Email address</label>
+            <label className="block text-gray-700">Email address / Username</label>
             <input
               type="email"
               className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -65,7 +67,10 @@ const LoginCard = () => {
           <button className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full cursor-pointer">
             <FaApple className="text-black w-6 h-6" />
           </button>
-          <button className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full cursor-pointer">
+          <button
+            className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full cursor-pointer"
+            onClick={() => signInWithRedirect(auth, googleProvider)}
+          >
             <img 
               src="https://img.icons8.com/?size=100&id=V5cGWnc9R4xj&format=png&color=000000" 
               alt="Google Logo" 

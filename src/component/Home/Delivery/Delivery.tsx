@@ -1,5 +1,5 @@
 import { Button } from "@mantine/core"; 
-import { data } from "../../Data/Data"; 
+import { data } from "../../data/Data"; 
 
 const { send } = data; 
 

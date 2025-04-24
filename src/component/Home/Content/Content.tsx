@@ -1,4 +1,4 @@
-import { data } from "../../Data/Data"; // Import data utama
+import { data } from "../../data/Data"; // Import data utama
 import { Button } from "@mantine/core";
 
 const { cards } = data; // Ambil data 'cards'

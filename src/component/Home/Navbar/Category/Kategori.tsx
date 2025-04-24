@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "../../../Data/Data"; // Data kategori tetap dari file ini
+import { data } from "../../../data/Data"; // Data kategori tetap dari file ini
 import { Button } from "@mantine/core";
 
 const { cards } = data; // Ambil data kategori dari Data.ts
