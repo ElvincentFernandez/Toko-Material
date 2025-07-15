@@ -18,7 +18,7 @@ export function HeaderSearch() {
     <header className="fixed top-0 left-0 w-full bg-blue-900 text-white z-50 shadow-md">
       <div className="flex justify-between items-center px-4 py-3 md:px-8">
         {/* Logo */}
-        <div className="text-2xl font-semibold">Mandiri Steel</div>
+        <div className="text-2xl font-semibold">Mandiri</div>
 
         {/* Menu besar (Desktop), sembunyikan di bawah 850px */}
         <div className="hidden max-[850px]:hidden min-[850px]:flex space-x-6">
